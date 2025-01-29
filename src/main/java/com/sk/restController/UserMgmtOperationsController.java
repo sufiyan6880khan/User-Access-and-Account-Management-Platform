@@ -37,6 +37,7 @@ public class UserMgmtOperationsController
 	    public ResponseEntity<String> saveUser(@RequestBody UserAccount account) {
 	        try {
 	            String resultMsg = userService.registerUser(account);
+	            System.out.println("Hello");
 	            return new ResponseEntity<>(resultMsg, HttpStatus.CREATED);
 	        } catch (Exception e) {
 	            e.printStackTrace();
