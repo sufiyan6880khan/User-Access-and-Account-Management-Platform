@@ -167,7 +167,8 @@ public class UserMgmtServiceImpl implements IUserMgmtService
 	
 	
 	@Override
-	public UserAccount showUserByUserId(Integer id) {
+	public UserAccount showUserByUserId(Integer id) 
+	{
 
 	    // Load the user by user id
 	    Optional<UserMaster> opt = userMasterRepo.findById(id);
